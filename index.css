@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#main{
+    background: url('Weather-news-intro.webp');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+#main>video{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+#WeatherApp{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#WeatherApp>#form{
+    width: 350px;
+    height: 470px;
+    padding: 20px 10px;
+    border: 1px solid white;
+    border-radius: 8px;
+    text-align: center;
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#WeatherApp>#form>input{
+    font-size: 16px;
+    height:35px ;
+    width: 300px;
+    padding: 0px 10px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+#WeatherApp>#form>button{
+    font-size: 18px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#WeatherApp>#form>button:hover{
+    transform:scale(1.1) ;
+    transition: ease 0.8s;
+}
+#WeatherApp>#form>img{
+    height: 100px;
+    width: 100px;
+}
+#WeatherApp>#form>button>img{
+    height: 15px;
+    margin: 5px 0px -2px 10px;
+}
+#WeatherApp>#form>#temperature{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width:320px) and (min-width:300px){
+    #main{
+        background: url('vertical_pic.jpg');
+        height: 105vh;
+        width: 104%;
+        background-size: cover;
+        background-position: center;
+    }
+    #main>video{
+        height: 105vh;
+        width: 100%;
+        object-fit: cover;
+    }
+    #WeatherApp>#form{
+        width: 250px;
+        height: 340px;
+        padding: 20px 10px;
+        /* border: 1px solid white;
+        border-radius: 8px;
+        text-align: center;
+        backdrop-filter: blur(4px); */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    }
+    #WeatherApp>#form>input{
+        font-size: 15px;
+        height:30px ;
+        width: 200px;
+        padding: 0px 8px;
+        /* outline: none;
+        border: none;
+        border-radius: 8px; */
+    }
+    #WeatherApp>#form>button{
+        font-size: 16px;
+        padding: 4px 10px;
+        /* border: none;
+        border-radius: 5px;
+        cursor: pointer; */
+    }
+    #WeatherApp>#form>button:hover{
+        transform:scale(1.1) ;
+        transition: ease 0.8s;
+    }
+    #WeatherApp>#form>img{
+        height: 70px;
+        width: 70px;
+    }
+}
