@@ -73,7 +73,7 @@
     align-items: center;
     justify-content: center;
 }
-@media screen and (max-width:320px) and (min-width:290px){
+@media screen and (max-width:320px) and (min-width:300px){
     #main{
         background: url('vertical_pic.jpg');
         height: 105vh;
